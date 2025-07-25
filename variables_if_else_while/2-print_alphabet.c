@@ -1,16 +1,23 @@
-#include <unistd.h> // Required for putchar
+/*
+ * File: 2-print_alphabet.c
+ * Auth: Brennan D Baraban
+ */
 
+#include <stdio.h>
+
+/**
+ * main - Prints the alphabet in lowercase.
+ *
+ * Return: Always 0.
+ */
 int main(void)
 {
-    char c = 'a'; // Initialize character to 'a'
+	char letter;
 
-    while (c <= 'z') // Loop through all lowercase letters
-    {
-        putchar(c); // Print the current character
-        c++;        // Increment to the next character
-    }
+	for (letter = 'a'; letter <= 'z'; letter++)
+		putchar(letter);
 
-    putchar('\n'); // Print a newline character
+	putchar('\n');
 
-    return (0); // Indicate successful execution
+	return (0);
 }
