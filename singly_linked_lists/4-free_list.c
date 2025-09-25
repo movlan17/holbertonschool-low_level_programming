@@ -10,7 +10,7 @@ void free_list(list_t *head)
 {
 	list_t *tmp;
 
-	while (tmp->next != NULL )
+	while (tmp->head != NULL )
 	{
 		tmp = head-> next;
 		free(head-> str);
