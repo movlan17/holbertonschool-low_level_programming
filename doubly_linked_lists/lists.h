@@ -4,10 +4,12 @@
 #include <stddef.h>
 
 /**
- * struct dlistint_s - Doubly linked list
+ * struct dlistint_s - Doubly linked list node
  * @n: Integer
- * @prev: Pointer to the previous node
- * @next: Pointer to the next node
+ * @prev: Points to the previous node
+ * @next: Points to the next node
+ *
+ * Description: Node structure for doubly linked list
  */
 typedef struct dlistint_s
 {
@@ -19,6 +21,7 @@ typedef struct dlistint_s
 /* Function prototypes */
 size_t print_dlistint(const dlistint_t *h);
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n);
+void free_dlistint(dlistint_t *head);
 
 #endif /* LISTS_H */
 
