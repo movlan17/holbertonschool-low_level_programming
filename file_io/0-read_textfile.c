@@ -20,7 +20,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (filename == NULL)
 		return (0);
 
-	f = fopen(filename, "r");
+	f = open(filename, "r");
 	if (f == NULL)
 		return (0);
 
@@ -28,7 +28,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	if (!b)
 	{
-		fclose(f);
+		close(f);
 		return (0);
 	}
 	bytes_read = fread(b, sizeof(char), letters, f);
@@ -36,6 +36,6 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	for (i = 0; i < bytes_read; i++)
 		putchar(b[i]);
 	free(b);
-	fclose(f);
+	close(f);
 	return (bytes_read);
 }
