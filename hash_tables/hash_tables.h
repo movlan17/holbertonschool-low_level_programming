@@ -2,6 +2,7 @@
 #define HASH_TABLES_H
 
 #include <stdlib.h>
+#include <string.h>
 
 /**
  * struct hash_node_s - Node of a hash table
@@ -25,20 +26,5 @@ typedef struct hash_node_s
  * @size: Size of the array
  * @array: Array of pointers to hash_node_t (linked list for chaining)
  *
- * Description: Structure representing a hash table with
- * separate chaining for collision handling.
- */
-typedef struct hash_table_s
-{
-	unsigned long int size;
-	hash_node_t **array;
-} hash_table_t;
-
-/* Function prototypes */
-hash_table_t *hash_table_create(unsigned long int size);
-unsigned long int hash_djb2(const unsigned char *str);
-unsigned long int key_index(const unsigned char *key, unsigned long int size);
-int hash_table_set(hash_table_t *ht, const char *key, const char *value);
-
-#endif /* HASH_TABLES_H */
+ * Description: Structure representing a hash table with*
 
