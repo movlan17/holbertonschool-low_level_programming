@@ -26,5 +26,16 @@ typedef struct hash_node_s
  * @size: Size of the array
  * @array: Array of pointers to hash_node_t (linked list for chaining)
  *
- * Description: Structure representing a hash table with*
+ * Description: Structure representing a hash table with
+ * separate chaining for collision handling.
+ */
+typedef struct hash_table_s
+{
+	unsigned long int size;
+	hash_node_t **array;
+} hash_table_t;
+
+/* Function prototypes */
+hash_table_t *hash_table_create(unsigned long int size);
+unsigned long int hash_djb2(_
 
