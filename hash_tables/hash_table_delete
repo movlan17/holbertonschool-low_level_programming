@@ -1,6 +1,13 @@
 #include <stdlib.h>
 #include "hash_tables.h"
 
+/**
+ * hash_table_delete - Hash cədvəlini silir və yaddaşı azad edir.
+ * @ht: Silinəcək hash cədvəlinin göstəricisi.
+ *
+ * Funksiya hash cədvəldəki bütün düyünləri, onların açar və dəyərlərini
+ * azad edir, sonra isə cədvəl üçün ayrılmış yaddaşı sərbəst buraxır.
+ */
 void hash_table_delete(hash_table_t *ht)
 {
     unsigned long int i;
