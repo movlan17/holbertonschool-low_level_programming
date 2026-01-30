@@ -1,9 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-/* Allowed function prototypes */
-
-/* _putchar */
+/* _putchar function prototype */
 int _putchar(char c);
 
 /* 0-isupper.c */
@@ -27,8 +25,5 @@ void more_numbers(void);
 /* 6-print_line.c */
 void print_line(int n);
 
-/* 7-print_diagonal.c */
-void print_diagonal(int n);
-
-#endif /* MAIN_H */
+/* 7-print_diagonal.c_*
 
