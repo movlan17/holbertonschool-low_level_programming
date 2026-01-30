@@ -1,24 +1,29 @@
-#include "main.h"
+#ifndef MAIN_H
+#define MAIN_H
 
-/**
- * print_line - draws a straight line in the terminal
- * @n: number of times the character _ should be printed
- *
- * Return: void
- */
-void print_line(int n)
-{
-	int i;
+/* Allowed function prototypes */
+int _putchar(char c);
 
-	if (n <= 0)
-	{
-		_putchar('\n');
-		return;
-	}
+/* 0-isupper.c */
+int _isupper(int c);
 
-	for (i = 0; i < n; i++)
-		_putchar('_');
+/* 1-isdigit.c */
+int _isdigit(int c);
 
-	_putchar('\n');
-}
+/* 2-mul.c */
+int mul(int a, int b);
+
+/* 3-print_numbers.c */
+void print_numbers(void);
+
+/* 4-print_most_numbers.c */
+void print_most_numbers(void);
+
+/* 5-more_numbers.c */
+void more_numbers(void);
+
+/* 6-print_line.c */
+void print_line(int n);
+
+#endif /* MAIN_H */
 
