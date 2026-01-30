@@ -2,6 +2,8 @@
 #define MAIN_H
 
 /* Allowed function prototypes */
+
+/* _putchar */
 int _putchar(char c);
 
 /* 0-isupper.c */
@@ -24,6 +26,9 @@ void more_numbers(void);
 
 /* 6-print_line.c */
 void print_line(int n);
+
+/* 7-print_diagonal.c */
+void print_diagonal(int n);
 
 #endif /* MAIN_H */
 
