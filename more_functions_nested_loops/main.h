@@ -31,5 +31,8 @@ void print_diagonal(int n);
 /* 8-print_square.c */
 void print_square(int size);
 
+/* 9-fizz_buzz.c */
+int main(void);
+
 #endif /* MAIN_H */
 
